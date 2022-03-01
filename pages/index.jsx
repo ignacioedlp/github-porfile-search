@@ -80,7 +80,7 @@ const Home = () => {
           handleSubmit={handleSubmit}
           handleChange={handleChange}
         />
-        {dataUser !== 0 && (
+        {userExist !== null && (
           <Profile
             repositorios={repositorios}
             dataUser={dataUser}
