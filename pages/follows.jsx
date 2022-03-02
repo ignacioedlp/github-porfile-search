@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import { useContext } from 'react'
 import { ProfileContext } from '../context/ProfileContext'
 import { Search, Loader, Follower } from '../components/index'
@@ -30,7 +31,7 @@ const Follows = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#2c3e50]  p-2 ">
       <Head>
-        <title>Create Next App</title>
+        <title>Github finder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="my-1 box-border flex w-full flex-1 flex-col items-center justify-center  px-20 text-center">
