@@ -12,7 +12,7 @@ function Footer() {
         href="#"
         className="text-lg font-bold text-gray-800 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
       >
-        Bithub finder
+        Github finder
       </a>
 
       <p className="py-2 text-gray-800 dark:text-white sm:py-0">
