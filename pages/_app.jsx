@@ -1,13 +1,14 @@
 import '../styles/globals.css'
-import { NextUIProvider } from '@nextui-org/react'
+import 'animate.css'
+import { ProfileProvider } from '../context/ProfileContext'
 
 function MyApp({ Component, pageProps }) {
   return (
-    // 2. Use at the root of your app
-    // <NextUIProvider>
-    <Component {...pageProps} />
-
-    /* </NextUIProvider> */
+   
+    <ProfileProvider>
+      <Component {...pageProps} />
+    </ProfileProvider>
+ 
   )
 }
 

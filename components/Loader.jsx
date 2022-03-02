@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/react'
 import { MoonLoader } from 'react-spinners'
+import { ProfileContext } from '../context/ProfileContext'
 
 const style = {
   wrapper: `text-white h-96 w-72 flex flex-col justify-center items-center`,
@@ -14,9 +15,12 @@ const cssOverride = css`
 `
 
 function Loader() {
+  const { statusProcess } = React.useContext(ProfileContext)
+
   return (
     <div className={style.wrapper}>
       <div className={style.title}>Searching...</div>
+      <div className={style.title}>{statusProcess}</div>
       <MoonLoader
         color={'#fff'}
         loading={true}

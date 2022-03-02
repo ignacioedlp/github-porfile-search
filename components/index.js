@@ -1,3 +1,5 @@
 export { default as Search } from './Search'
 export { default as Profile } from './Profile/Profile'
 export { default as Loader } from './Loader'
+export { default as Follower } from './Profile/Follower'
+export { default as Footer } from './Footer'
